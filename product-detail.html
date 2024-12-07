@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="product-detail.css">
+  <script defer src="product.js"></script>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-ico">
+
+</head>
+<body>
+  <!-- Tombol kembali -->
+  <div class="back-button">
+    <a href="index6.html#menu">
+      <span class="icon">←</span> Back to Menu
+    </a>
+  </div>
+
+  <!-- Kontainer detail produk -->
+  <div class="product-container">
+    <div class="product-image-container">
+      <img id="product-image" src="" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h1 id="product-name"></h1>
+      <p id="product-description"></p>
+    </div>
+
+    <!-- Order Now Button -->
+    <div class="order-now-container">
+      <button class="order-now-button" onclick="openOrderModal()">
+        <span class="order-icon">🛒</span> Order Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal untuk Pilihan Grab atau Gojek -->
+<div id="order-modal" class="order-modal">
+  <div class="order-modal-content">
+    <!-- Close Icon in the Top-Right Corner -->
+    <span class="close-btn top-right" onclick="closeOrderModal()">×</span>
+    <h2>Select Delivery Option</h2>
+    <div class="delivery-options">
+      <!-- Grab Button -->
+      <button class="delivery-btn grab-btn" onclick="openGrab()">
+        <img src="grabfood.jpg" alt="Grab Logo" class="delivery-logo">
+        Grab
+      </button>
+      <!-- Gojek Button -->
+      <button class="delivery-btn gojek-btn" onclick="openGojek()">
+        <img src="gofood.png" alt="Gojek Logo" class="delivery-logo">
+        Gojek
+      </button>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+  
+  function openOrderModal() {
+  const modal = document.getElementById('order-modal');
+  modal.classList.add('show');
+}
+
+function closeOrderModal() {
+  const modal = document.getElementById('order-modal');
+  modal.classList.remove('show');
+}
+
+  function openOrderModal() {
+  const modal = document.getElementById('order-modal');
+  modal.classList.add('show');
+  setTimeout(() => {
+    modal.querySelector('.delivery-btn').focus(); // Fokus ke tombol pertama
+  }, 300);
+}
+
+  
+    // Function to open the Grab link
+    function openGrab() {
+      window.open(" https://r.grab.com/g/6-20241124_135250_4e635b61a50651bf_MEXMPS-6-CYUVLAABC7XZG6", "_blank");
+      closeOrderModal();  // Close the modal after opening the link
+    }
+
+    // Function to open the Gojek link
+    function openGojek() {
+      window.open("https://gofood.link/a/zecNYb", "_blank");
+      closeOrderModal();  // Close the modal after opening the link
+    }
+
+    // Function to open the modal
+    function openOrderModal() {
+      document.getElementById('order-modal').style.display = 'flex';
+    }
+
+    // Function to close the modal
+    function closeOrderModal() {
+      document.getElementById('order-modal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

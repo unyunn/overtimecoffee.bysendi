@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overtime Coffee</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+<link rel="icon" href="favicon.ico" type="image/x-ico">
+
+<!-- Boxicons CDN -->
+<link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+
+</head> 
+
+<body>
+  
+<div id="loading-screen">
+  <div class="spinner">
+    <img src="loading.png" alt="Latte Art" class="latte-image">
+  </div>
+  <p class="loading-text">Brewing Your Experience...</p>
+  <div class="progress-bar-loading">
+    <div class="progress"></div>
+  </div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop">
+<i class="bx bx-chevron-up"></i>
+</button>
+
+  
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Logo -->
+            <img src="coffe.jpg" alt="Overtime Coffee Logo" style="width: 30px;">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#maps">Maps</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+        </ul>
+<div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+    </nav>
+</header>
+    <!-- Konten halaman -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+<section id="home">
+  <video id="background-video" autoplay muted loop>
+    <source src="coffe.mp4" type="video/mp4" />
+    Browser Anda tidak mendukung elemen video.
+  </video>
+
+  <!-- Konten Home -->
+  <div class="home-content">
+    <h1>Welcome to Overtime Coffee</h1>
+    <p>Every Coffee Has a Story.</p>
+    <a href="#menu" class="cta-button">Explore Our Menu</a>
+    <a href="#about" class="scroll-down">
+      <span>&#8595;</span> Scroll Down
+    </a>
+  </div>
+
+  <!-- Kontrol Video -->
+  <div class="video-controls">
+    <button id="play-pause" class="control-button">
+      <img src="pause.png" alt="Play" id="play-icon" />
+    </button>
+    <button id="mute-unmute" class="control-button">
+      <img src="mute.png" alt="Mute" id="mute-icon" />
+    </button>
+    <button id="full-screen">
+    <img src="fullscreen.png" alt="Full Screen">
+  </button>
+  </div>
+</section>
+
+
+<section id="about" class="about-section">
+    <div class="about-container">
+        <h2 class="about-title">About Overtime Coffee</h2>
+        <div class="about-content">
+            
+            <!-- Paragraf 1 -->
+            <div class="about-item">
+                <p class="intro">
+                    Overtime Coffee is a popular cafe in Ciamis that offers both indoor and outdoor seating, each with its own cozy atmosphere. Whether you prefer the warmth of the indoors or the fresh outdoor air, Overtime Coffee provides the perfect place to unwind.
+                </p>
+                <div class="about-image">
+                    <img src="indoor.jpg" alt="Overtime Coffee Indoor">
+                </div>
+            </div>
+
+            <!-- Paragraf 2 -->
+            <div class="about-item">
+                <p class="atmosphere">
+                    The cafe is surrounded by lush greenery, offering natural air and a tranquil ambiance. Visitors can also enjoy live music, typically in the afternoon or evening, creating a lively yet relaxed environment.
+                </p>
+                <div class="about-image">
+                    <img src="greenery.jpg" alt="Overtime Coffee Greenery">
+                </div>
+            </div>
+
+            <!-- Paragraf 3 -->
+            <div class="about-item">
+                <p class="instagram-worthy">
+                    With spacious areas and neutral color tones, Overtime Coffee is a favorite spot for Instagram-worthy photos. The cafe features contemporary photo spots both indoors and outdoors, making it a popular choice for those looking to capture memories.
+                </p>
+                <div class="about-image">
+                    <img src="spot.jpg" alt="Instagrammable Spot">
+                </div>
+            </div>
+
+            <!-- Paragraf 4 -->
+            <div class="about-item">
+                <p class="unique-offerings">
+                    At Overtime Coffee, we don't just offer great coffee. Our delicious and distinctive coffee flavors come at an affordable price. Additionally, visitors can enjoy various food offerings, including grilled donuts, fried ice cream, and dim sum.
+                </p>
+                <div class="about-image">
+                    <img src="food&coffe.jpg" alt="Food and Coffee">
+                </div>
+            </div>
+
+            <!-- Paragraf 5 -->
+            <div class="about-item">
+                <p class="barbershop">
+                    For those looking to freshen up their hair, Overtime Coffee also houses a barbershop. Get your hair done while enjoying a cup of coffee or snack—it's a unique experience that sets us apart from other cafes.
+                </p>
+                <div class="about-image">
+                    <img src="barbershop.jpg" alt="Overtime Coffee Barbershop">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+    <!-- Judul yang pasti berada di atas -->
+        <div class="menu-container">
+          <h2 class="about-title">Our Menu</h2>
+    <div class="menu-content">
+        <!-- Item Menu -->
+        <div class="menu-item">
+            <a href="product-detail.html?id=1">
+                <img src="nasigoreng.jpg" alt="Product 1">
+                <div class="menu-info">
+                    <h3>Fried rice Overtime</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="product-detail.html?id=2">
+                <img src="capuccinoroti.jpg" alt="Product 2">
+                <div class="menu-info">
+                    <h3>Hot capuccino toast bread </h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </a>
+        </div>
+        <!-- Tambahkan hingga 15 item -->
+              <div class="menu-item">
+            <a href="product-detail.html?id=3">
+                <img src="omelette.jpg" alt="Product 2">
+                <div class="menu-info">
+                    <h3>omelette</h3>
+                    <p>Click to learn more!</p>
+                </div>
+            </a>
+        </div>
+            <div class="menu-item">
+              <a href="product-detail.html?id=4">
+                <img src="lightmeal.jpg" alt="Product 2">
+                <div class="menu-info">
+                  <h3>Light Meal</h3>
+                  <p>Click to learn more!</p>
+                </div>
+              </a>
+            </div>
+          <div class="menu-item">
+            <a href="product-detail.html?id=5">
+              <img src="mixseafod-1x1.jpg" alt="Product 2">
+              <div class="menu-info">
+                <h3>Mix Seafood</h3>
+                <p>Click to learn more!</p>
+              </div>
+            </a>
+          </div>
+           <div class="menu-item">
+             <a href="product-detail.html?id=6">
+               <img src="nasigorengkampung.jpg" alt="Product 2">
+               <div class="menu-info">
+                 <h3>Village Fried Rice</h3>
+                 <p>Click to learn more!</p>
+               </div>
+             </a>
+           </div>
+           <div class="menu-item">
+             <a href="product-detail.html?id=7">
+               <img src="avocadosandwich.jpg" alt="Product 2">
+               <div class="menu-info">
+                 <h3>Avocado Sandwich</h3>
+                 <p>Click to learn more!</p>
+               </div>
+             </a>
+           </div>
+           <div class="menu-item">
+             <a href="product-detail.html?id=8">
+               <img src="cupdesert.jpg" alt="Product 2">
+               <div class="menu-info">
+                 <h3>Cup Desert</h3>
+                 <p>Click to learn more!</p>
+               </div>
+             </a>
+           </div>
+         <div class="menu-item">
+           <a href="product-detail.html?id=9">
+             <img src="breakfastdeal.jpg" alt="Product 2">
+             <div class="menu-info">
+               <h3>Breakfastdeal</h3>
+               <p>Click to learn more!</p>
+             </div>
+           </a>
+         </div>
+           <div class="menu-item">
+             <a href="product-detail.html?id=10">
+               <img src="chickenstroganoff.jpg" alt="Product 2">
+               <div class="menu-info">
+                 <h3>Chicken Stroganoff</h3>
+                 <p>Click to learn more!</p>
+               </div>
+             </a>
+           </div>
+            <div class="menu-item">
+              <a href="product-detail.html?id=11">
+                <img src="cinnamoncoffe.jpg" alt="Product 2">
+                <div class="menu-info">
+                  <h3>Cinnamon Coffee</h3>
+                  <p>Click to learn more!</p>
+                </div>
+              </a>
+            </div>
+           <div class="menu-item">
+             <a href="product-detail.html?id=12">
+               <img src="exotic.jpg" alt="Product 2">
+               <div class="menu-info">
+                 <h3>Exotic</h3>
+                 <p>Click to learn more!</p>
+               </div>
+             </a>
+           </div>         
+    </div>
+</section>
+
+
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="carousel">
+      <div class="carousel-content">
+        <div class="testimonial active">
+          <blockquote class="quote">"Amazing coffee and cozy atmosphere. It's my favorite spot to relax and enjoy a good book."</blockquote>
+          <div class="progress-bar">
+  <span></span>
+</div>
+
+          <p class="review-author">- Maman Doni</p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <blockquote class="quote">"The baristas here are so friendly, and their latte art is always on point. Highly recommend!"</blockquote>
+          <div class="progress-bar">
+  <span></span>
+</div>
+
+          <p class="review-author">- Ayi Susanto</p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <blockquote class="quote">"Great place for meetings or catching up with friends. The pastries are to die for!"</blockquote>
+          <p class="review-author">- Sopia Piaa</p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <blockquote class="quote">"I’ve been to many coffee shops, but this one stands out. Exceptional quality and service."</blockquote>
+          <p class="review-author">- Hanan Nabilah</p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <blockquote class="quote">"Overtime Coffee is more than just a cafe; it’s an experience. Love it every time I visit."</blockquote>
+          <p class="review-author">- Kang Geri</p>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn prev" aria-label="Previous Review">‹</button>
+      <button class="carousel-btn next" aria-label="Next Review">›</button>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      We'd love to hear from you! Feel free to reach out with any questions or feedback.
+    </p>
+    <form id="contact-form" class="contact-form" data-aos="zoom-in" data-aos-delay="200">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <div id="icon-animation" class="icon-animation hidden">
+    ✉️
+</div>
+
+    <div id="thank-you-message" class="thank-you hidden" data-aos="fade-in">
+      <p>Thank you for reaching out! We will get back to you soon.</p>
+      <button id="back-to-home" class="back-btn">Back to Home</button>
+    </div>
+  </div>
+</section>
+
+<section id="maps" class="maps-section">
+  <h2 class="maps-title">Our Locations</h2>
+
+  <!-- Map Display -->
+  <div id="map-wrapper" class="map-container">
+    <h3 id="location-name">Overtime Coffee Ciamis</h3>
+    <div id="location-map" class="map-placeholder"></div>
+  </div>
+
+  <!-- Desktop Navigation Buttons -->
+  <div class="map-buttons">
+    <button class="nav-button" data-direction="prev">Previous</button>
+    <button id="open-map" class="nav-button" target="_blank">View on Google Maps</button>
+    <button class="nav-button" data-direction="next">Next</button>
+  </div>
+
+  <!-- Mobile Indicators -->
+  <div class="mobile-indicators">
+    <span class="indicator active"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+  </div>
+</section>
+
+<section id="gallery" class="gallery-section">
+  <h2 class="gallery-title">Our Gallery</h2>
+  <!-- Filter Controls -->
+  <div class="gallery-filter">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="event">Event</button>
+    <button class="filter-btn" data-category="live-music">Live Music</button>
+    <button class="filter-btn" data-category="barista-moments">Barista Moments</button>
+    <button class="filter-btn" data-category="customer-moments">Customer Moments</button>
+    <button class="filter-btn" data-category="seasonal-themes">Seasonal Themes</button>
+  </div>  
+  
+  <!-- Category 1 -->
+<div class="gallery-category" data-category="event">
+  <h3 class="category-title">Event</h3>
+  <div class="image-slider">
+    <div class="image-item" data-category="event">
+      <img src="event1.jpg" class="gallery-img" alt="Event 1">
+      <div class="image-overlay">
+        <p>Latte Art</p>
+      </div>
+    </div>
+    <div class="image-item" data-category="event">
+      <img src="event2.jpg" class="gallery-img" alt="Event 2">
+      <div class="image-overlay">
+        <p>Virtual Latte Art</p>
+      </div>
+    </div>
+    <div class="image-item" data-category="event">
+      <img src="event3.jpg" class="gallery-img" alt="Event 3">
+      <div class="image-overlay">
+        <p>We Stand Palestine</p>
+      </div>
+    </div>
+</div>
+</div>
+
+
+
+  <!-- Category 2 -->
+  <div class="gallery-category"
+  data-category="live-music">
+    <h3 class="category-title">Live Music</h3>
+    <div class="image-slider">
+      <div class="image-item"   data-category="live-music">
+        <img src="music1.jpg" class="gallery-img" alt="Music 1">
+        <div class="image-overlay">
+          <p>Evening Atmosphere with Live Music</p>
+        </div>
+      </div>
+      <div class="image-item"  data-category="live-music">
+        <img src="music2.jpg" alt="Music 2">
+        <div class="image-overlay">
+          <p>Acoustic Sessions</p>
+        </div>
+      </div>
+      <div class="image-item"  data-category="live-music">
+        <img src="music3.jpg" alt="Music 3">
+        <div class="image-overlay">
+          <p>Acoustic Sessions</p>
+        </div>
+      </div>
+         <div class="image-item"  data-category="live-music">
+           <img src="music4.jpg" alt="Music 3">
+           <div class="image-overlay">
+             <p>Acoustic Sessions</p>
+           </div>
+         </div>
+         <div class="image-item"   data-category="live-music">
+           <img src="music5.jpg" alt="Music 3">
+           <div class="image-overlay">
+             <p>Acoustic Sessions</p>
+           </div>
+         </div>      
+    </div>
+  </div>
+
+  <!-- Category 3 -->
+  <div class="gallery-category"
+  data-category="barista-moments"
+>
+    <h3 class="category-title">Barista Moments</h3>
+    <div class="image-slider">
+      <div class="image-item"  data-category="barista-moments">
+        <img src="barista1.jpg" alt="Barista 1">
+        <div class="image-overlay">
+          <p>Latte Art in Action</p>
+        </div>
+      </div>
+      <div class="image-item"  data-category="barista-moments">
+        <img src="barista2.jpg" alt="Barista 2">
+        <div class="image-overlay">
+          <p>Espresso Shots</p>
+        </div>
+      </div>
+      <div class="image-item" data-category="barista-moments">
+        <img src="barista3.jpg" alt="Barista 3">
+        <div class="image-overlay">
+          <p>Perfect Pour Over</p>
+        </div>
+      </div>
+       <div class="image-item" data-category="barista-moments">
+        <img src="barista4.jpg" alt="Barista 3">
+        <div class="image-overlay">
+          <p>The art of coffee, one pour at a time.</p>
+        </div>
+      </div>
+        <div class="image-item"  data-category="barista-moments">
+          <img src="barista5.jpg" alt="Barista 3">
+          <div class="image-overlay">
+            <p>Life happens, coffee helps. Come recharge and refuel with our handcrafted coffee.</p>
+          </div>
+        </div>    
+    </div>
+  </div>
+  
+    <!-- Category 4 -->
+  <div class="gallery-category"
+  data-category="customer-moments">
+    <h3 class="category-title">Costumer Moments</h3>
+    <div class="image-slider">
+      <div class="image-item"  data-category="customer-moments">
+        <img src="costumer1.jpg" alt="Barista 1">
+        <div class="image-overlay">
+          <p>Relaxation in Every Sip at Overtime Coffee!</p>
+        </div>
+      </div>
+      <div class="image-item"  data-category="customer-moments">
+        <img src="costumer2.jpg" alt="Barista 2">
+        <div class="image-overlay">
+          <p>Cherished Moments at Overtime Coffee! </p>
+        </div>
+      </div>
+      <div class="image-item"   data-category="customer-moments">
+        <img src="costumer3.jpg" alt="Barista 3">
+        <div class="image-overlay">
+          <p>Conversations Brewed Over Coffee! </p>
+        </div>
+      </div>
+      <div class="image-item"  data-category="customer-moments">
+        <img src="costumer4.jpg" alt="Barista 3">
+        <div class="image-overlay">
+          <p>Joyful Moments at Overtime Coffee!</p>
+        </div>
+      </div>      
+       <div class="image-item"  data-category="customer-moments">
+         <img src="costumer5.jpg" alt="Barista 3">
+         <div class="image-overlay">
+           <p>Gather around, enjoy coffee, and create beautiful memories.</p>
+         </div>
+       </div>     
+    </div>
+  </div>
+    <!-- Category 4 -->
+    <div class="gallery-category"
+    data-category="seasonal-themes">
+      <h3 class="category-title">Seasonal Themes</h3>
+      <div class="image-slider">
+        <div class="image-item"     data-category="seasonal-themes">
+          <img src="event4.jpg" alt="Barista 1">
+          <div class="image-overlay">
+            <p >Merry Christmas Day </p>
+          </div>
+        </div>
+        <div class="image-item"    data-category="seasonal-themes">
+          <img src="event5.jpg" alt="Barista 2">
+          <div class="image-overlay">
+            <p>Halloween Day</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+</section>
+
+    <div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" src="" alt="Lightbox Image">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryItems = document.querySelectorAll(".image-item"); // Ambil semua elemen .image-item
+  const lightbox = document.querySelector("#lightbox"); // Lightbox container
+  const lightboxContent = document.querySelector(".lightbox-content"); // Gambar dalam lightbox
+  const lightboxClose = document.querySelector(".lightbox-close"); // Tombol close
+
+  // Tambahkan event listener ke setiap item galeri
+  galleryItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault(); // Cegah reload halaman
+      const img = item.querySelector("img"); // Cari elemen gambar dalam item
+      if (img) {
+        lightboxContent.src = img.src; // Set gambar dalam lightbox
+        lightbox.classList.add("show"); // Tampilkan lightbox
+      }
+    });
+  });
+
+  // Tutup lightbox saat tombol close diklik
+  lightboxClose.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+    lightboxContent.src = ""; // Reset gambar
+  });
+
+  // Tutup lightbox saat klik di luar gambar
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("show");
+      lightboxContent.src = ""; // Reset gambar
+    }
+  });
+});
+
+</script>
+
+
+<footer id="footer" class="footer-section">
+  <div class="footer-container">
+    <!-- Logo and Title -->
+    <div class="footer-logo">
+      <img src="coffe.jpg" alt="Overtime Coffee Logo">
+      <h3>Overtime Coffee</h3>
+    </div>
+
+    <!-- Info for Three Locations -->
+    <div class="footer-locations">
+      <!-- Location 1 -->
+      <div class="location-card">
+        <h4> <i class="fas fa-map-marker-alt"></i>  Ciamis</h4>
+        <p><strong>Address:</strong> overtime coffee, Jl. Ir. H. Juanda No.141, Kotakulon, Ciamis, Kec. Ciamis, Kabupaten Ciamis, Jawa Barat 46211</p>
+        <p><strong>Operating Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM</p>
+      </div>
+
+      <!-- Location 2 -->
+      <div class="location-card">
+        <h4><i class="fas fa-map-marker-alt"></i>  Banjar</h4>
+        <p><strong>Address:</strong> Coffee OVERTIME, Jl. Kapten Jamhur No.15, Banjar, Kec. Banjar, Kota Banjar, Jawa Barat 46311</p>
+        <p><strong>Operating Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM</p>
+      </div>
+
+      <!-- Location 3 -->
+      <div class="location-card">
+        <h4> <i class="fas fa-map-marker-alt"></i>  Pangandaran</h4>
+        <p><strong>Address:</strong> Overtime Coffee, Jl Raya Pangandaran Jl. Pamugaran, Wonoharjo, Pangandaran, Pangandaran Regency, West Java 46396</p>
+        <p><strong>Operating Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" class="social-link" data-tooltip="Follow us on Instagram!"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-credits">
+    <p>&copy; 2024 Overtime Coffee. All Rights Reserved.</p>
+  </div>
+  
+</footer>
+<div class="live-chat-button" id="liveChat">
+  ☕ Perlu rekomendasi menu? Kami siap membantu.
+  <span class="tooltip">Klik untuk memulai chat!</span>
+</div>
+
+        <script src="script.js" defer></script>
+        
+       <script>
+  AOS.init();
+</script>
+
+</body>
+</html>

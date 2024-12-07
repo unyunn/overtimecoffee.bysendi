@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Fried Rice Overtime",
+    "description": "Delicious fried rice with a touch of overtime!",
+    "image": "nasigoreng.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hot Cappuccino Toast Bread",
+    "description": "Warm cappuccino served with crispy toast bread.",
+    "image": "capuccinoroti.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Omelette",
+    "description": "Soft and fluffy omelette with your choice of fillings.",
+    "image": "omelette.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Light Meal",
+    "description": "A healthy light meal option for any time of the day.",
+    "image": "lightmeal.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mix Seafood",
+    "description": "Fresh seafood mix served with a tangy sauce.",
+    "image": "mixseafod-1x1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Village Fried Rice",
+    "description": "Traditional fried rice with a touch of home.",
+    "image": "nasigorengkampung.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Avocado Sandwich",
+    "description": "A creamy avocado sandwich with fresh veggies.",
+    "image": "avocadosandwich.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Cup Dessert",
+    "description": "A sweet and creamy dessert served in a cup.",
+    "image": "cupdesert.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Breakfast Deal",
+    "description": "A complete breakfast set to start your day right.",
+    "image": "breakfastdeal.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Chicken Stroganoff",
+    "description": "Tender chicken served in a creamy mushroom sauce.",
+    "image": "chickenstroganoff.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cinnamon Coffee",
+    "description": "A rich and spicy coffee with a cinnamon twist.",
+    "image": "cinnamoncoffe.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Exotic",
+    "description": "An exotic blend of spices and flavors.",
+    "image": "exotic.jpg"
+  }
+]

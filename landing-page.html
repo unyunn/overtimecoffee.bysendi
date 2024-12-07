@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overtime Coffee - Welcome Page</title>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-pfKBth/nKoLFUqpcTPbJ1DSpbMZjw9WhYvDyJsy4ghV9RFosJn/F6wW53fURuQiTRi3LUJEmJej89m3UZim7UA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="landing-page.css">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-ico">
+
+</head>
+<body>
+  
+    <div id="preloader">
+    <img src="coffe.jpg" alt="Loading" class="rotating-logo">
+</div>
+
+<script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0'; // Tambahkan efek fade-out
+    setTimeout(() => {
+      preloader.style.display = 'none'; // Hilangkan setelah animasi selesai
+    }, 1000); // Waktu dalam milidetik
+  });
+</script>
+
+    
+<div class="share-wrapper">
+    <button id="shareButton" class="share-icon" title="Share">
+        <img src="share-icon-on-transparent-background-free-png.png" alt="Share Icon">
+    </button>
+    <div id="shareMenu" class="share-menu">
+        <button id="copyLinkButton">
+            <img src="png-transparent-computer-icons-hyperlink-symbol-link-miscellaneous-text-logo-removebg-preview.png" alt="Copy Icon">
+            Salin Tautan
+        </button>
+        <a href="https://wa.me/?text=https://overtimecoffee.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+            WhatsApp
+        </a>
+        <a href="https://www.instagram.com/overtime.ot" target="_blank">
+            <img src="png-clipart-instagram-logo-icon-others-text-photography-removebg-preview.png" alt="Instagram Icon">
+            Instagram
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://overtimecoffee.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook Icon">
+            Facebook
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://overtimecoffee.com" target="_blank">
+            <img src="1725374683twitter-x-logo.png" alt="Twitter Icon">
+            Twitter
+        </a>
+        <a href="mailto:?subject=Overtime Coffee&body=Check this out: https://overtimecoffee.com"!  target="_blank">
+            <img src="112-gmail_email_mail-512-removebg-preview.png" alt="Email Icon">
+            Email
+        </a>
+        <a href="https://telegram.me/share/url?url=https://overtimecoffee.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon">
+            Telegram
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://overtimecoffee" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn Icon">
+            LinkedIn
+        </a>
+    </div>
+</div>
+
+
+<script>
+    const shareButton = document.getElementById('shareButton');
+    const shareMenu = document.getElementById('shareMenu');
+    const copyLinkButton = document.getElementById('copyLinkButton');
+
+    // Toggle Share Menu
+    shareButton.addEventListener('click', () => {
+        shareMenu.classList.toggle('active');
+    });
+
+    // Copy Link to Clipboard
+    copyLinkButton.addEventListener('click', () => {
+        navigator.clipboard.writeText('https://overtimecoffee.com')
+            .then(() => alert('Tautan berhasil disalin!'))
+            .catch(err => alert('Gagal menyalin tautan: ', err));
+    });
+
+    // Close Menu When Clicking Outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.share-wrapper')) {
+            shareMenu.classList.remove('active');
+        }
+    });
+</script>
+
+    <div class="share-menu" id="shareMenu">
+        <a href="https://wa.me/?text=Check%20out%20Overtime%20Coffee!%20https://overtimecoffee.com" target="_blank" class="share-option" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            WhatsApp
+        </a>
+        <a href="https://www.instagram.com/overtime.ot?igshid=M2xkdDR5aDJ6N2U1" target="_blank" class="share-option" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Instagram_logo_2016.svg" alt="Instagram">
+            Instagram
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://overtimecoffee.com" target="_blank" class="share-option" data-aos="fade-up" data-aos-delay="300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Twitter_Logo_36x36.svg" alt="Twitter">
+            Twitter
+        </a>
+        <button class="share-option copy-link" id="copyLinkButton" data-aos="fade-up" data-aos-delay="400">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Copy_icon.svg" alt="Copy">
+            Copy Link
+        </button>
+    </div>
+</div>
+  
+    <!-- Video Section -->
+    <div class="video-container">
+        <video id="background-video" autoplay loop muted>
+            <source src="landing-page.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Sound Button -->
+        <button id="sound-button" data-aos="zoom-in">
+            <img src="mute.png" alt="Sound Control Icon" id="sound-icon">
+        </button>
+    </div>
+
+<script>
+        // Sound Button Logic
+        const video = document.getElementById('background-video');
+        const soundButton = document.getElementById('sound-button');
+        const soundIcon = document.getElementById('sound-icon');
+
+        soundButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                soundIcon.src = 'sound.png'; // Change to unmute icon
+            } else {
+                video.muted = true;
+                soundIcon.src = 'mute.png'; // Change to mute icon
+            }
+        });
+    </script>
+
+        <!-- Welcome Content -->
+        <div class="welcome-content">
+            <div class="logo-container" data-aos="zoom-in">
+                <img src="coffe.jpg" alt="Overtime Coffee Logo" class="logo">
+            </div>
+            <h1 data-aos="fade-down">Welcome to Overtime Coffee</h1>
+            <p data-aos="fade-up">Choose your option below:</p>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="https://wa.me/62+87787787997" target="_blank" class="button" data-aos="fade-right">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Ciamis" class="button-icon">
+                    WhatsApp - Ciamis
+                </a>
+                <a href="https://wa.me/62+85161261414" target="_blank" class="button" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Banjar" class="button-icon">
+                    WhatsApp - Banjar
+                </a>
+                <a href="https://wa.me/62+85155020669" target="_blank" class="button" data-aos="fade-right" data-aos-delay="200">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Pangandaran" class="button-icon">
+                    WhatsApp - Pangandaran
+                </a>
+                <a href="https://r.grab.com/g/6-20241118_204042_4e635b61a50651bf_MEXMPS-6-CYUVLAABC7XZG6" target="_blank" class="button" data-aos="fade-left" data-aos-delay="300">
+                    <img src="grabfood.jpg" alt="GrabFood Ciamis" class="button-icon">
+                    GrabFood - Ciamis
+                </a>
+                <a href="https://gofood.link/a/zecNYbG" target="_blank" class="button" data-aos="fade-left" data-aos-delay="400">
+                    <img src="gofood.png" alt="GoFood Banjar" class="button-icon">
+                    GoFood - Banjar
+                </a>
+                <a href="index.html" class="button" data-aos="fade-up" data-aos-delay="500">
+                    <img src="coffe.jpg" alt="Overtime Coffee Website" class="button-icon">
+                    Official Website
+                </a>
+                <a href="https://maps.app.goo.gl/VdnjsTCAw3nmvrGG7" target="_blank" class="button" data-aos="fade-up" data-aos-delay="600">
+                    <img src="gmaps.png" alt="Location Ciamis" class="button-icon">
+                    Location - Ciamis
+                </a>
+                <a href="https://maps.app.goo.gl/2SpMM1LpMBqQ8NBBA" target="_blank" class="button" data-aos="fade-up" data-aos-delay="700">
+                    <img src="gmaps.png" alt="Location Banjar" class="button-icon">
+                    Location - Banjar
+                </a>
+                <a href="https://maps.app.goo.gl/pfqThCzDBFE97ZcSA" target="_blank" class="button" data-aos="fade-up" data-aos-delay="800">
+                    <img src="gmaps.png" alt="Location Pangandaran" class="button-icon">
+                    Location - Pangandaran
+                </a>
+                <a href="https://www.instagram.com/overtime.ot" target="_blank" class="button" data-aos="zoom-in" data-aos-delay="900">
+                    <img src="Instagram.png" alt="Instagram" class="button-icon">
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-92yyXfD9fu/ZG7peUsAi8oq7Kpii9cFSJXOiK2RppTy5+VwPcpHOEWe/lKgxZXpCniLpBoKzwFBfDomhELk3Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    
+</body>
+</html>
